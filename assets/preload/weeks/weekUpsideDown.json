@@ -1,0 +1,49 @@
+{
+	"storyName": "Transdimensinal Terror",
+	"difficulties": "Abyssal",
+	"hideFreeplay": false,
+	"weekBackground": "sf",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"hideStoryMode": false,
+	"songs": [
+		[
+			"Upside Down",
+			"demo",
+			[
+				213,
+				23,
+				0
+			]
+		],
+		[
+			"Spine Chill",
+			"flayer",
+			[
+				34,
+				34,
+				57
+			]
+		],
+		[
+			"Flayed",
+			"demo",
+			[
+				213,
+				23,
+				0
+			]
+		]
+	],
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"weekName": "Week Upside Down"
+}

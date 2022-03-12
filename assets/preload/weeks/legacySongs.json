@@ -1,0 +1,40 @@
+{
+	"storyName": "Legacy Songs",
+	"difficulties": "Abyssal",
+	"hideFreeplay": false,
+	"weekBackground": "sf",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"hideStoryMode": true,
+	"songs": [
+		[
+			"Upside Down (Old)",
+			"demo",
+			[
+				213,
+				23,
+				0
+			]
+		],
+		[
+			"Flayed (Old)",
+			"demo",
+			[
+				213,
+				23,
+				0
+			]
+		]
+	],
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"weekName": "Legacy Songs"
+}

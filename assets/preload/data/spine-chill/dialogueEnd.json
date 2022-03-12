@@ -1,0 +1,46 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.04,
+			"portrait": "blank",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "(The storm hasn't let up. The Shadow Monster rages on.) "
+		},
+		{
+			"speed": 0.05,
+			"portrait": "blank",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "(In the distance, The headlights of an\\napproaching car grow brighter and brighter.)"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "bf-sf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Bep?"
+		},
+		{
+			"speed": 0.04,
+			"portrait": "blank",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "(The car comes to a halting stop.) "
+		},
+		{
+			"speed": 0.035,
+			"portrait": "blank",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "(Hey kid, it isn't safe out here! Get in!)"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "bf-sf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Beep!"
+		}
+	]
+}

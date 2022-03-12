@@ -1,0 +1,24 @@
+{
+	"dialogue_pos": "center",
+	"position": [
+		-370,
+		430
+	],
+	"scale": 1,
+	"animations": [
+		{
+			"anim": "talk",
+			"loop_offsets": [
+				0,
+				0
+			],
+			"idle_offsets": [
+				-1,
+				-12
+			],
+			"loop_name": "Box",
+			"idle_name": "Box"
+		}
+	],
+	"image": "Blank"
+}

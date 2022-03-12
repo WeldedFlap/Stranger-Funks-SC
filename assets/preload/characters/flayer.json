@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-8,
+				51
+			],
+			"loop": false,
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "MindFlayerLeft",
+			"indices": []
+		},
+		{
+			"offsets": [
+				0,
+				21
+			],
+			"loop": false,
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "MindFlayerDown",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-6,
+				157
+			],
+			"loop": false,
+			"anim": "singUP",
+			"fps": 24,
+			"name": "MindFlayerUp",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-16,
+				67
+			],
+			"loop": false,
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "MindFlayerRight",
+			"indices": []
+		},
+		{
+			"offsets": [
+				0,
+				57
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": true,
+			"name": "MindFlayerIdle"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/MindFlayer",
+	"position": [
+		-1160,
+		-830
+	],
+	"healthicon": "flayer",
+	"flip_x": false,
+	"healthbar_colors": [
+		34,
+		34,
+		57
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

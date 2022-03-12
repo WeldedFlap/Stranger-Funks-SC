@@ -1,0 +1,24 @@
+{
+	"position": [
+		20,
+		10
+	],
+	"dialogue_pos": "center",
+	"scale": 1.35,
+	"image": "GfPortrait",
+	"animations": [
+		{
+			"idle_offsets": [
+				-1,
+				-12
+			],
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "talk",
+			"idle_name": "GfPortrait",
+			"loop_name": "GfPortrait"
+		}
+	]
+}

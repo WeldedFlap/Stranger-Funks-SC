@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="MindFlayer.png">
+	<!-- Created with Adobe Animate version 21.0.5.40714 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="MindFlayerDown0000" x="0" y="0" width="2690" height="1145"/>
+	<SubTexture name="MindFlayerDown0001" x="0" y="0" width="2690" height="1145"/>
+	<SubTexture name="MindFlayerDown0002" x="2690" y="0" width="2677" height="1141" frameX="-8" frameY="-4" frameWidth="2690" frameHeight="1145"/>
+	<SubTexture name="MindFlayerDown0003" x="2690" y="0" width="2677" height="1141" frameX="-8" frameY="-4" frameWidth="2690" frameHeight="1145"/>
+	<SubTexture name="MindFlayerDown0004" x="2690" y="0" width="2677" height="1141" frameX="-8" frameY="-4" frameWidth="2690" frameHeight="1145"/>
+	<SubTexture name="MindFlayerDown0005" x="2690" y="0" width="2677" height="1141" frameX="-8" frameY="-4" frameWidth="2690" frameHeight="1145"/>
+	<SubTexture name="MindFlayerDown0006" x="2690" y="0" width="2677" height="1141" frameX="-8" frameY="-4" frameWidth="2690" frameHeight="1145"/>
+	<SubTexture name="MindFlayerDown0007" x="2690" y="0" width="2677" height="1141" frameX="-8" frameY="-4" frameWidth="2690" frameHeight="1145"/>
+	<SubTexture name="MindFlayerDown0008" x="2690" y="0" width="2677" height="1141" frameX="-8" frameY="-4" frameWidth="2690" frameHeight="1145"/>
+	<SubTexture name="MindFlayerDown0009" x="2690" y="0" width="2677" height="1141" frameX="-8" frameY="-4" frameWidth="2690" frameHeight="1145"/>
+	<SubTexture name="MindFlayerIdle0000" x="5367" y="0" width="2725" height="1113" frameX="0" frameY="-29" frameWidth="2725" frameHeight="1142"/>
+	<SubTexture name="MindFlayerIdle0001" x="5367" y="0" width="2725" height="1113" frameX="0" frameY="-29" frameWidth="2725" frameHeight="1142"/>
+	<SubTexture name="MindFlayerIdle0002" x="0" y="1145" width="2718" height="1116" frameX="-1" frameY="-23" frameWidth="2725" frameHeight="1142"/>
+	<SubTexture name="MindFlayerIdle0003" x="0" y="1145" width="2718" height="1116" frameX="-1" frameY="-23" frameWidth="2725" frameHeight="1142"/>
+	<SubTexture name="MindFlayerIdle0004" x="2718" y="1145" width="2709" height="1120" frameX="-3" frameY="-17" frameWidth="2725" frameHeight="1142"/>
+	<SubTexture name="MindFlayerIdle0005" x="2718" y="1145" width="2709" height="1120" frameX="-3" frameY="-17" frameWidth="2725" frameHeight="1142"/>
+	<SubTexture name="MindFlayerIdle0006" x="5427" y="1145" width="2709" height="1117" frameX="-3" frameY="-17" frameWidth="2725" frameHeight="1142"/>
+	<SubTexture name="MindFlayerIdle0007" x="5427" y="1145" width="2709" height="1117" frameX="-3" frameY="-17" frameWidth="2725" frameHeight="1142"/>
+	<SubTexture name="MindFlayerIdle0008" x="0" y="2265" width="2677" height="1141" frameX="-13" frameY="0" frameWidth="2725" frameHeight="1142"/>
+	<SubTexture name="MindFlayerIdle0009" x="0" y="2265" width="2677" height="1141" frameX="-13" frameY="0" frameWidth="2725" frameHeight="1142"/>
+	<SubTexture name="MindFlayerIdle0010" x="0" y="2265" width="2677" height="1141" frameX="-13" frameY="0" frameWidth="2725" frameHeight="1142"/>
+	<SubTexture name="MindFlayerIdle0011" x="0" y="2265" width="2677" height="1141" frameX="-13" frameY="0" frameWidth="2725" frameHeight="1142"/>
+	<SubTexture name="MindFlayerIdle0012" x="0" y="2265" width="2677" height="1141" frameX="-13" frameY="0" frameWidth="2725" frameHeight="1142"/>
+	<SubTexture name="MindFlayerIdle0013" x="0" y="2265" width="2677" height="1141" frameX="-13" frameY="0" frameWidth="2725" frameHeight="1142"/>
+	<SubTexture name="MindFlayerLeft0000" x="2677" y="2265" width="2718" height="1143"/>
+	<SubTexture name="MindFlayerLeft0001" x="2677" y="2265" width="2718" height="1143"/>
+	<SubTexture name="MindFlayerLeft0002" x="5395" y="2265" width="2677" height="1141" frameX="-22" frameY="-2" frameWidth="2718" frameHeight="1143"/>
+	<SubTexture name="MindFlayerLeft0003" x="5395" y="2265" width="2677" height="1141" frameX="-22" frameY="-2" frameWidth="2718" frameHeight="1143"/>
+	<SubTexture name="MindFlayerLeft0004" x="5395" y="2265" width="2677" height="1141" frameX="-22" frameY="-2" frameWidth="2718" frameHeight="1143"/>
+	<SubTexture name="MindFlayerLeft0005" x="5395" y="2265" width="2677" height="1141" frameX="-22" frameY="-2" frameWidth="2718" frameHeight="1143"/>
+	<SubTexture name="MindFlayerLeft0006" x="5395" y="2265" width="2677" height="1141" frameX="-22" frameY="-2" frameWidth="2718" frameHeight="1143"/>
+	<SubTexture name="MindFlayerLeft0007" x="5395" y="2265" width="2677" height="1141" frameX="-22" frameY="-2" frameWidth="2718" frameHeight="1143"/>
+	<SubTexture name="MindFlayerLeft0008" x="5395" y="2265" width="2677" height="1141" frameX="-22" frameY="-2" frameWidth="2718" frameHeight="1143"/>
+	<SubTexture name="MindFlayerLeft0009" x="5395" y="2265" width="2677" height="1141" frameX="-22" frameY="-2" frameWidth="2718" frameHeight="1143"/>
+	<SubTexture name="MindFlayerRight0000" x="0" y="3408" width="2749" height="1165"/>
+	<SubTexture name="MindFlayerRight0001" x="0" y="3408" width="2749" height="1165"/>
+	<SubTexture name="MindFlayerRight0002" x="2749" y="3408" width="2677" height="1141" frameX="-46" frameY="-24" frameWidth="2749" frameHeight="1165"/>
+	<SubTexture name="MindFlayerRight0003" x="2749" y="3408" width="2677" height="1141" frameX="-46" frameY="-24" frameWidth="2749" frameHeight="1165"/>
+	<SubTexture name="MindFlayerRight0004" x="2749" y="3408" width="2677" height="1141" frameX="-46" frameY="-24" frameWidth="2749" frameHeight="1165"/>
+	<SubTexture name="MindFlayerRight0005" x="2749" y="3408" width="2677" height="1141" frameX="-46" frameY="-24" frameWidth="2749" frameHeight="1165"/>
+	<SubTexture name="MindFlayerRight0006" x="2749" y="3408" width="2677" height="1141" frameX="-46" frameY="-24" frameWidth="2749" frameHeight="1165"/>
+	<SubTexture name="MindFlayerRight0007" x="2749" y="3408" width="2677" height="1141" frameX="-46" frameY="-24" frameWidth="2749" frameHeight="1165"/>
+	<SubTexture name="MindFlayerRight0008" x="2749" y="3408" width="2677" height="1141" frameX="-46" frameY="-24" frameWidth="2749" frameHeight="1165"/>
+	<SubTexture name="MindFlayerRight0009" x="2749" y="3408" width="2677" height="1141" frameX="-46" frameY="-24" frameWidth="2749" frameHeight="1165"/>
+	<SubTexture name="MindFlayerUp0000" x="5426" y="3408" width="2714" height="1197"/>
+	<SubTexture name="MindFlayerUp0001" x="5426" y="3408" width="2714" height="1197"/>
+	<SubTexture name="MindFlayerUp0002" x="0" y="4605" width="2677" height="1141" frameX="-18" frameY="-56" frameWidth="2714" frameHeight="1197"/>
+	<SubTexture name="MindFlayerUp0003" x="0" y="4605" width="2677" height="1141" frameX="-18" frameY="-56" frameWidth="2714" frameHeight="1197"/>
+	<SubTexture name="MindFlayerUp0004" x="0" y="4605" width="2677" height="1141" frameX="-18" frameY="-56" frameWidth="2714" frameHeight="1197"/>
+	<SubTexture name="MindFlayerUp0005" x="0" y="4605" width="2677" height="1141" frameX="-18" frameY="-56" frameWidth="2714" frameHeight="1197"/>
+	<SubTexture name="MindFlayerUp0006" x="0" y="4605" width="2677" height="1141" frameX="-18" frameY="-56" frameWidth="2714" frameHeight="1197"/>
+	<SubTexture name="MindFlayerUp0007" x="0" y="4605" width="2677" height="1141" frameX="-18" frameY="-56" frameWidth="2714" frameHeight="1197"/>
+	<SubTexture name="MindFlayerUp0008" x="0" y="4605" width="2677" height="1141" frameX="-18" frameY="-56" frameWidth="2714" frameHeight="1197"/>
+	<SubTexture name="MindFlayerUp0009" x="0" y="4605" width="2677" height="1141" frameX="-18" frameY="-56" frameWidth="2714" frameHeight="1197"/>
+</TextureAtlas>

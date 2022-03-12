@@ -1,0 +1,74 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.04,
+			"portrait": "gf-sf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Hey, are you alright? What the hell happened?"
+		},
+		{
+			"speed": 0.035,
+			"portrait": "bf-sf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Bop"
+		},
+		{
+			"speed": 0.04,
+			"portrait": "gf-sf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Say, where are we anyway? This doesn't look like the city at all."
+		},
+		{
+			"speed": 0.035,
+			"portrait": "bf-sf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Bep Boop"
+		},
+		{
+			"speed": 0.04,
+			"portrait": "gf-sf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Oh my god, Boyfriend, look out!"
+		},
+		{
+			"speed": 0.165,
+			"portrait": "demo",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "..."
+		},
+		{
+			"speed": 0.035,
+			"portrait": "bf-sf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "holy shit it's that mf Demoshlorgon "
+		},
+		{
+			"speed": 0.05,
+			"portrait": "demo",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "man you're weird as hell"
+		},
+		{
+			"speed": 0.035,
+			"portrait": "bf-sf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Your face looks like a goddamn scrotum "
+		},
+		{
+			"speed": 0,
+			"portrait": "demo",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": ">:("
+		}
+	]
+}

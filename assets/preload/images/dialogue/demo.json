@@ -1,0 +1,24 @@
+{
+	"position": [
+		20,
+		10
+	],
+	"dialogue_pos": "left",
+	"scale": 1.35,
+	"image": "DemoPortrait",
+	"animations": [
+		{
+			"idle_offsets": [
+				-1,
+				-12
+			],
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "talk",
+			"idle_name": "DemoPortrait",
+			"loop_name": "DemoPortrait"
+		}
+	]
+}
