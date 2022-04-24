@@ -1,39 +1,39 @@
 {
 	"dialogue": [
 		{
-			"speed": 0.04,
-			"portrait": "bf-sf",
-			"boxState": "normal",
 			"expression": "talk",
-			"text": "Beepo Bop!"
+			"text": "Beepo Bop!",
+			"boxState": "normal",
+			"speed": 0.04,
+			"portrait": "bf-sf"
 		},
 		{
-			"speed": 0.04,
-			"portrait": "gf-sf",
-			"boxState": "normal",
 			"expression": "talk",
-			"text": "we don't have time to just sit here, we gotta go! "
+			"text": "We don't have time to just sit here, we have to go!",
+			"boxState": "normal",
+			"speed": 0.04,
+			"portrait": "gf-sf"
 		},
 		{
+			"expression": "talk",
+			"text": "Bep Bo.",
+			"boxState": "normal",
 			"speed": 0.035,
-			"portrait": "bf-sf",
-			"boxState": "normal",
-			"expression": "talk",
-			"text": "Bep Bo"
+			"portrait": "bf-sf"
 		},
 		{
+			"expression": "talk",
+			"text": "...",
+			"boxState": "normal",
 			"speed": 0.265,
-			"portrait": "demo",
-			"boxState": "normal",
-			"expression": "talk",
-			"text": "..."
+			"portrait": "demo"
 		},
 		{
-			"speed": 0.035,
-			"portrait": "bf-sf",
-			"boxState": "normal",
 			"expression": "talk",
-			"text": "Cya scrotum boy"
+			"text": "See you later scrotum boy!",
+			"boxState": "normal",
+			"speed": 0.035,
+			"portrait": "bf-sf"
 		}
 	]
 }

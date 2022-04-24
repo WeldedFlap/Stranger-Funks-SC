@@ -1,46 +1,46 @@
 {
 	"dialogue": [
 		{
-			"speed": 0.04,
-			"portrait": "blank",
-			"boxState": "normal",
 			"expression": "talk",
-			"text": "(The storm hasn't let up. The Shadow Monster rages on.) "
+			"text": "(The storm hasn't let up. The Shadow Monster rages on.) ",
+			"boxState": "normal",
+			"speed": 0.04,
+			"portrait": "blank"
 		},
 		{
+			"expression": "talk",
+			"text": "(In the distance, the headlights of an\\napproaching car grow brighter and brighter.)",
+			"boxState": "normal",
 			"speed": 0.05,
-			"portrait": "blank",
-			"boxState": "normal",
-			"expression": "talk",
-			"text": "(In the distance, The headlights of an\\napproaching car grow brighter and brighter.)"
+			"portrait": "blank"
 		},
 		{
+			"expression": "talk",
+			"text": "Bep?",
+			"boxState": "normal",
 			"speed": 0.03,
-			"portrait": "bf-sf",
-			"boxState": "normal",
-			"expression": "talk",
-			"text": "Bep?"
+			"portrait": "bf-sf"
 		},
 		{
+			"expression": "talk",
+			"text": "(The car comes to a halting stop.) ",
+			"boxState": "normal",
 			"speed": 0.04,
-			"portrait": "blank",
-			"boxState": "normal",
-			"expression": "talk",
-			"text": "(The car comes to a halting stop.) "
+			"portrait": "blank"
 		},
 		{
+			"expression": "talk",
+			"text": "(Hey kid, it isn't safe out here! Get in!)",
+			"boxState": "normal",
 			"speed": 0.035,
-			"portrait": "blank",
-			"boxState": "normal",
-			"expression": "talk",
-			"text": "(Hey kid, it isn't safe out here! Get in!)"
+			"portrait": "blank"
 		},
 		{
-			"speed": 0.03,
-			"portrait": "bf-sf",
-			"boxState": "normal",
 			"expression": "talk",
-			"text": "Beep!"
+			"text": "Beep!",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "bf-sf"
 		}
 	]
 }

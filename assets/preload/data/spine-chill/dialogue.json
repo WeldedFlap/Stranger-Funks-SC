@@ -4,43 +4,43 @@
 			"expression": "talk",
 			"text": "Beep? Beep Bo?",
 			"boxState": "normal",
-			"speed": 0.04,
-			"portrait": "bf-sf"
+			"portrait": "bf-sf",
+			"speed": 0.04
 		},
 		{
 			"expression": "talk",
 			"text": "(Girlfriend appears to be missing. Something doesn't bode well with Boyfriend.)",
 			"boxState": "normal",
-			"speed": 0.04,
-			"portrait": "blank"
+			"portrait": "blank",
+			"speed": 0.04
 		},
 		{
 			"expression": "talk",
-			"text": "Bo Bop ...",
+			"text": "Bo..? Bop...",
 			"boxState": "normal",
-			"speed": 0.08,
-			"portrait": "bf-sf"
+			"portrait": "bf-sf",
+			"speed": 0.08
 		},
 		{
 			"expression": "talk",
-			"text": "(There's a storm brewing, and a chill runs down Boyfriend's spine.)",
+			"text": "(There's a storm brewing and a chill runs down Boyfriend's spine.)",
 			"boxState": "normal",
-			"speed": 0.04,
-			"portrait": "blank"
+			"portrait": "blank",
+			"speed": 0.04
 		},
 		{
 			"expression": "talk",
 			"text": "...",
 			"boxState": "normal",
-			"speed": 0.105,
-			"portrait": "bf-sf"
+			"portrait": "bf-sf",
+			"speed": 0.105
 		},
 		{
 			"expression": "talk",
 			"text": "(He has entered the Shadow Monster's\\ndomain.)",
 			"boxState": "normal",
-			"speed": 0.04,
-			"portrait": "blank"
+			"portrait": "blank",
+			"speed": 0.04
 		}
 	]
 }

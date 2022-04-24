@@ -1,0 +1,34 @@
+{
+	"song": {
+		"speed": 2.5,
+		"stage": "starCourt",
+		"player1": "bf",
+		"player2": "demo",
+		"player3": null,
+		"events": [
+			[
+				8000,
+				[
+					[
+						"Hey!",
+						"bf",
+						""
+					],
+					[
+						"Screen Shake",
+						"0.5, 0.05",
+						""
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": "noteSplashes",
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 120,
+		"arrowSkin": "",
+		"needsVoices": true,
+		"song": "Flayed"
+	}
+}

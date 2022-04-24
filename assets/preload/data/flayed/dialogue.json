@@ -4,36 +4,36 @@
 			"expression": "talk",
 			"text": "God, what was that?",
 			"boxState": "normal",
-			"portrait": "gf-sf",
-			"speed": 0.04
+			"speed": 0.04,
+			"portrait": "gf-sf"
 		},
 		{
 			"expression": "talk",
 			"text": "Doesn't matter, at least we should be safe until we can figure out how to get home.",
 			"boxState": "normal",
-			"portrait": "gf-sf",
-			"speed": 0.035
+			"speed": 0.035,
+			"portrait": "gf-sf"
 		},
 		{
 			"expression": "talk",
 			"text": "Bep!",
 			"boxState": "normal",
-			"portrait": "bf-sf",
-			"speed": 0.045
+			"speed": 0.045,
+			"portrait": "bf-sf"
 		},
 		{
 			"expression": "talk",
 			"text": "...",
 			"boxState": "normal",
-			"portrait": "demo",
-			"speed": 0.24
+			"speed": 0.24,
+			"portrait": "demo"
 		},
 		{
 			"expression": "talk",
 			"text": "(They were not, in fact, safe.) ",
 			"boxState": "normal",
-			"portrait": "blank",
-			"speed": 0.04
+			"speed": 0.04,
+			"portrait": "blank"
 		}
 	]
 }

@@ -6,3 +6,6 @@ mall
 mallEvil
 school
 schoolEvil
+byersHouse
+field
+starCourt

@@ -12,6 +12,7 @@ import flixel.math.FlxMath;
 import flixel.text.FlxText;
 import flixel.util.FlxColor;
 import flixel.tweens.FlxTween;
+import flixel.tweens.FlxEase;
 #if MODS_ALLOWED
 import sys.FileSystem;
 import sys.io.File;
@@ -29,10 +30,12 @@ class CreditsState extends MusicBeatState
 	private var creditsStuff:Array<Array<String>> = [];
 
 	var bg:FlxSprite;
-	var descBox:FlxSprite;
 	var descText:FlxText;
 	var intendedColor:Int;
 	var colorTween:FlxTween;
+	var descBox:AttachedSprite;
+
+	var offsetThing:Float = -75;
 
 	override function create()
 	{
@@ -41,6 +44,7 @@ class CreditsState extends MusicBeatState
 		DiscordClient.changePresence("In the Menus", null);
 		#end
 
+		persistentUpdate = true;
 		bg = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
 		add(bg);
 		bg.screenCenter();
@@ -49,46 +53,41 @@ class CreditsState extends MusicBeatState
 		add(grpOptions);
 
 		#if MODS_ALLOWED
-		// trace("finding mod shit");
-		for (folder in Paths.getModDirectories())
+		var path:String = 'modsList.txt';
+		if (FileSystem.exists(path))
 		{
-			var creditsFile:String = Paths.mods(folder + '/data/credits.txt');
-			if (FileSystem.exists(creditsFile))
+			var leMods:Array<String> = CoolUtil.coolTextFile(path);
+			for (i in 0...leMods.length)
 			{
-				var firstarray:Array<String> = File.getContent(creditsFile).split('\n');
-				for (i in firstarray)
+				if (leMods.length > 1 && leMods[0].length > 0)
 				{
-					var arr:Array<String> = i.replace('\\n', '\n').split("::");
-					if (arr.length >= 5)
-						arr.push(folder);
-					creditsStuff.push(arr);
+					var modSplit:Array<String> = leMods[i].split('|');
+					if (!Paths.ignoreModFolders.contains(modSplit[0].toLowerCase()) && !modsAdded.contains(modSplit[0]))
+					{
+						if (modSplit[1] == '1')
+							pushModCreditsToList(modSplit[0]);
+						else
+							modsAdded.push(modSplit[0]);
+					}
 				}
-				creditsStuff.push(['']);
 			}
-		};
-		var folder = "";
-		var creditsFile:String = Paths.mods('data/credits.txt');
-		if (FileSystem.exists(creditsFile))
+		}
+
+		var arrayOfFolders:Array<String> = Paths.getModDirectories();
+		arrayOfFolders.push('');
+		for (folder in arrayOfFolders)
 		{
-			var firstarray:Array<String> = File.getContent(creditsFile).split('\n');
-			for (i in firstarray)
-			{
-				var arr:Array<String> = i.replace('\\n', '\n').split("::");
-				if (arr.length >= 5)
-					arr.push(folder);
-				creditsStuff.push(arr);
-			}
-			creditsStuff.push(['']);
+			pushModCreditsToList(folder);
 		}
 		#end
 
 		var pisspoop:Array<Array<String>> = [
 			// Name - Icon name - Description - Link - BG Color
-			["Stranger Funk's Team"],
+			["Stranger Funks Team"],
 			[
 				'Baranamo',
 				'BaraHead',
-				'Lead Artist, Lead Musician, and Mod Director',
+				'Lead Artist, Lead Musician, And Mod Director',
 				'https://bio.link/baranamo',
 				'E1691B'
 			],
@@ -102,7 +101,7 @@ class CreditsState extends MusicBeatState
 			[
 				'Masegovia',
 				'MaseHead',
-				'Programmer for Early Builds',
+				'Programmer For Earlier Builds',
 				'https://twitter.com/masegovia2007?s=21',
 				'FDDD7A'
 			],
@@ -140,24 +139,33 @@ class CreditsState extends MusicBeatState
 				'RiverOaken',
 				'riveroaken',
 				'Main Artist/Animator of Psych Engine',
-				'https://twitter.com/river_oaken',
+				'https://twitter.com/RiverOaken',
 				'C30085'
 			],
 			[
-				'bb-panzu',
-				'bb-panzu',
+				'shubs',
+				'shubs',
 				'Additional Programmer of Psych Engine',
+				'https://twitter.com/yoshubs',
+				'279ADC'
+			],
+			[''],
+			['Former Engine Members'],
+			[
+				'bb-panzu',
+				'bb-panzu',
+				'Ex-Programmer of Psych Engine',
 				'https://twitter.com/bbsub3',
 				'389A58'
 			],
 			[''],
 			['Engine Contributors'],
 			[
-				'shubs',
-				'shubs',
-				'New Input System Programmer',
-				'https://twitter.com/yoshubs',
-				'4494E6'
+				'iFlicky',
+				'iflicky',
+				'Composer of Psync and Tea Time\nMade the Dialogue Sounds',
+				'https://twitter.com/flicky_i',
+				'AA32FE'
 			],
 			[
 				'SqirraRNG',
@@ -165,13 +173,6 @@ class CreditsState extends MusicBeatState
 				'Chart Editor\'s Sound Waveform base',
 				'https://twitter.com/gedehari',
 				'FF9300'
-			],
-			[
-				'iFlicky',
-				'iflicky',
-				'Delay/Combo Menu Song Composer\nand Dialogue Sounds',
-				'https://twitter.com/flicky_i',
-				'C549DB'
 			],
 			[
 				'PolybiusProxy',
@@ -192,7 +193,7 @@ class CreditsState extends MusicBeatState
 				'smokey',
 				'Spritemap Texture Support',
 				'https://twitter.com/Smokey_5_',
-				'0033CC'
+				'4D5DBD'
 			],
 			[''],
 			["Funkin' Crew"],
@@ -268,14 +269,19 @@ class CreditsState extends MusicBeatState
 			}
 		}
 
-		descBox = new FlxSprite().makeGraphic(1, 1, FlxColor.BLACK);
+		descBox = new AttachedSprite();
+		descBox.makeGraphic(1, 1, FlxColor.BLACK);
+		descBox.xAdd = -10;
+		descBox.yAdd = -10;
+		descBox.alphaMult = 0.6;
 		descBox.alpha = 0.6;
 		add(descBox);
 
-		descText = new FlxText(50, 600, 1180, "", 32);
+		descText = new FlxText(50, FlxG.height + offsetThing - 25, 1180, "", 32);
 		descText.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		descText.scrollFactor.set();
 		descText.borderSize = 2.4;
+		descBox.sprTracker = descText;
 		add(descText);
 
 		bg.color = getCurrentBGColor();
@@ -284,6 +290,9 @@ class CreditsState extends MusicBeatState
 		super.create();
 	}
 
+	var quitting:Bool = false;
+	var holdTime:Float = 0;
+
 	override function update(elapsed:Float)
 	{
 		if (FlxG.sound.music.volume < 0.7)
@@ -291,33 +300,80 @@ class CreditsState extends MusicBeatState
 			FlxG.sound.music.volume += 0.5 * FlxG.elapsed;
 		}
 
-		var upP = controls.UI_UP_P;
-		var downP = controls.UI_DOWN_P;
-
-		if (upP)
+		if (!quitting)
 		{
-			changeSelection(-1);
-		}
-		if (downP)
-		{
-			changeSelection(1);
-		}
-
-		if (controls.BACK)
-		{
-			if (colorTween != null)
+			if (creditsStuff.length > 1)
 			{
-				colorTween.cancel();
+				var shiftMult:Int = 1;
+				if (FlxG.keys.pressed.SHIFT)
+					shiftMult = 3;
+
+				var upP = controls.UI_UP_P;
+				var downP = controls.UI_DOWN_P;
+
+				if (upP)
+				{
+					changeSelection(-1 * shiftMult);
+					holdTime = 0;
+				}
+				if (downP)
+				{
+					changeSelection(1 * shiftMult);
+					holdTime = 0;
+				}
+
+				if (controls.UI_DOWN || controls.UI_UP)
+				{
+					var checkLastHold:Int = Math.floor((holdTime - 0.5) * 10);
+					holdTime += elapsed;
+					var checkNewHold:Int = Math.floor((holdTime - 0.5) * 10);
+
+					if (holdTime > 0.5 && checkNewHold - checkLastHold > 0)
+					{
+						changeSelection((checkNewHold - checkLastHold) * (controls.UI_UP ? -shiftMult : shiftMult));
+					}
+				}
 			}
-			FlxG.sound.play(Paths.sound('cancelMenu'));
-			MusicBeatState.switchState(new MainMenuState());
+
+			if (controls.ACCEPT)
+			{
+				CoolUtil.browserLoad(creditsStuff[curSelected][3]);
+			}
+			if (controls.BACK)
+			{
+				if (colorTween != null)
+				{
+					colorTween.cancel();
+				}
+				FlxG.sound.play(Paths.sound('cancelMenu'));
+				MusicBeatState.switchState(new MainMenuState());
+				quitting = true;
+			}
 		}
-		if (controls.ACCEPT)
+
+		for (item in grpOptions.members)
 		{
-			CoolUtil.browserLoad(creditsStuff[curSelected][3]);
+			if (!item.isBold)
+			{
+				var lerpVal:Float = CoolUtil.boundTo(elapsed * 12, 0, 1);
+				if (item.targetY == 0)
+				{
+					var lastX:Float = item.x;
+					item.screenCenter(X);
+					item.x = FlxMath.lerp(lastX, item.x - 70, lerpVal);
+					item.forceX = item.x;
+				}
+				else
+				{
+					item.x = FlxMath.lerp(item.x, 200 + -40 * Math.abs(item.targetY), lerpVal);
+					item.forceX = item.x;
+				}
+			}
 		}
 		super.update(elapsed);
 	}
+
+	var moveTween:FlxTween = null;
 
 	function changeSelection(change:Int = 0)
 	{
@@ -364,14 +420,47 @@ class CreditsState extends MusicBeatState
 				}
 			}
 		}
-		descText.text = creditsStuff[curSelected][2];
-		descText.screenCenter(Y);
-		descText.y += 270;
 
-		descBox.setPosition(descText.x - 10, descText.y - 10);
+		descText.text = creditsStuff[curSelected][2];
+		descText.y = FlxG.height - descText.height + offsetThing - 60;
+
+		if (moveTween != null)
+			moveTween.cancel();
+		moveTween = FlxTween.tween(descText, {y: descText.y + 75}, 0.25, {ease: FlxEase.sineOut});
+
 		descBox.setGraphicSize(Std.int(descText.width + 20), Std.int(descText.height + 25));
 		descBox.updateHitbox();
 	}
+
+	#if MODS_ALLOWED
+	private var modsAdded:Array<String> = [];
+
+	function pushModCreditsToList(folder:String)
+	{
+		if (modsAdded.contains(folder))
+			return;
+
+		var creditsFile:String = null;
+		if (folder != null && folder.trim().length > 0)
+			creditsFile = Paths.mods(folder + '/data/credits.txt');
+		else
+			creditsFile = Paths.mods('data/credits.txt');
+
+		if (FileSystem.exists(creditsFile))
+		{
+			var firstarray:Array<String> = File.getContent(creditsFile).split('\n');
+			for (i in firstarray)
+			{
+				var arr:Array<String> = i.replace('\\n', '\n').split("::");
+				if (arr.length >= 5)
+					arr.push(folder);
+				creditsStuff.push(arr);
+			}
+			creditsStuff.push(['']);
+		}
+		modsAdded.push(folder);
+	}
+	#end
 
 	function getCurrentBGColor()
 	{
