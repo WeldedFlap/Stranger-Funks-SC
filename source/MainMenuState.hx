@@ -32,7 +32,12 @@ class MainMenuState extends MusicBeatState
 	private var camGame:FlxCamera;
 	private var camAchievement:FlxCamera;
 
-	var optionShit:Array<String> = ['story_mode', 'freeplay', 'credits', #if !switch 'donate', #end 'options'];
+	var optionShit:Array<String> = ['story_mode', 'freeplay', 'guanlet', 'options'];
+
+	var storyBtn:FlxSprite;
+	var freeplayBtn:FlxSprite;
+	var guanletBtn:FlxSprite;
+	var optionsBtn:FlxSprite;
 
 	var magenta:FlxSprite;
 	var camFollow:FlxObject;
@@ -55,6 +60,7 @@ class MainMenuState extends MusicBeatState
 
 		FlxG.cameras.reset(camGame);
 		FlxG.cameras.add(camAchievement);
+		FlxG.mouse.visible = true;
 		FlxCamera.defaultCameras = [camGame];
 
 		transIn = FlxTransitionableState.defaultTransIn;
@@ -63,6 +69,7 @@ class MainMenuState extends MusicBeatState
 		persistentUpdate = persistentDraw = true;
 
 		var yScroll:Float = Math.max(0.25 - (0.05 * (optionShit.length - 4)), 0.1);
+
 		var bg:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('menuBG'));
 		bg.scrollFactor.set(0, yScroll);
 		bg.setGraphicSize(Std.int(bg.width * 1.175));
@@ -76,7 +83,7 @@ class MainMenuState extends MusicBeatState
 		add(camFollow);
 		add(camFollowPos);
 
-		magenta = new FlxSprite(-80).loadGraphic(Paths.image('menuDesat'));
+		magenta = new FlxSprite(-80).loadGraphic(Paths.image('menuBGBlue'));
 		magenta.scrollFactor.set(0, yScroll);
 		magenta.setGraphicSize(Std.int(magenta.width * 1.175));
 		magenta.updateHitbox();
@@ -98,27 +105,22 @@ class MainMenuState extends MusicBeatState
 
 		for (i in 0...optionShit.length)
 		{
-			var offset:Float = 108 - (Math.max(optionShit.length, 4) - 4) * 80;
-			var menuItem:FlxSprite = new FlxSprite(0, (i * 140) + offset);
-			menuItem.x += 80;
-			menuItem.scale.x = scale;
-			menuItem.scale.y = scale;
-			menuItem.frames = Paths.getSparrowAtlas('mainmenu/menu_' + optionShit[i]);
-			menuItem.animation.addByPrefix('idle', optionShit[i] + " basic", 24);
-			menuItem.animation.addByPrefix('selected', optionShit[i] + " white", 24);
-			menuItem.animation.play('idle');
-			menuItem.ID = i;
-			menuItems.add(menuItem);
-			var scr:Float = (optionShit.length - 4) * 0.135;
-			if (optionShit.length < 6)
-				scr = 0;
-			menuItem.scrollFactor.set(0, scr);
-			menuItem.antialiasing = ClientPrefs.globalAntialiasing;
-			// menuItem.setGraphicSize(Std.int(menuItem.width * 0.58));
-			menuItem.updateHitbox();
-		}
+			storyBtn = new FlxSprite(-200).loadGraphic(Paths.image('mainmenu/story'));
+			storyBtn.ID = 0;
+			menuItems.add(storyBtn);
 
-		FlxG.camera.follow(camFollowPos, null, 1);
+			freeplayBtn = new FlxSprite(150).loadGraphic(Paths.image('mainmenu/freeplay'));
+			freeplayBtn.ID = 1;
+			menuItems.add(freeplayBtn);
+
+			guanletBtn = new FlxSprite(500).loadGraphic(Paths.image('mainmenu/guanlet'));
+			guanletBtn.ID = 2;
+			menuItems.add(guanletBtn);
+
+			optionsBtn = new FlxSprite(500).loadGraphic(Paths.image('mainmenu/settings'));
+			optionsBtn.ID = 3;
+			menuItems.add(optionsBtn);
+		}
 
 		var versionShit:FlxText = new FlxText(12, FlxG.height - 44, 0, "Psych Engine v" + psychEngineVersion, 12);
 		versionShit.scrollFactor.set();
@@ -175,13 +177,13 @@ class MainMenuState extends MusicBeatState
 
 		if (!selectedSomethin)
 		{
-			if (controls.UI_UP_P)
+			if (controls.UI_LEFT_P)
 			{
 				FlxG.sound.play(Paths.sound('scrollMenu'));
 				changeItem(-1);
 			}
 
-			if (controls.UI_DOWN_P)
+			if (controls.UI_RIGHT_P)
 			{
 				FlxG.sound.play(Paths.sound('scrollMenu'));
 				changeItem(1);
@@ -232,14 +234,8 @@ class MainMenuState extends MusicBeatState
 										MusicBeatState.switchState(new StoryMenuState());
 									case 'freeplay':
 										MusicBeatState.switchState(new FreeplayState());
-									#if MODS_ALLOWED
-									case 'mods':
-										MusicBeatState.switchState(new ModsMenuState());
-									#end
-									case 'awards':
-										MusicBeatState.switchState(new AchievementsMenuState());
-									case 'credits':
-										MusicBeatState.switchState(new CreditsState());
+									case 'guanlet':
+										trace("Guanlet Mode Isn't Available Yet!");
 									case 'options':
 										LoadingState.loadAndSwitchState(new options.OptionsState());
 								}
@@ -261,7 +257,9 @@ class MainMenuState extends MusicBeatState
 
 		menuItems.forEach(function(spr:FlxSprite)
 		{
-			// Nothing
+			spr.screenCenter(Y);
+			spr.setGraphicSize(Std.int(spr.width * 0.4));
+			spr.antialiasing = ClientPrefs.globalAntialiasing;
 		});
 	}
 
@@ -269,26 +267,18 @@ class MainMenuState extends MusicBeatState
 	{
 		curSelected += huh;
 
-		if (curSelected >= menuItems.length)
+		if (curSelected >= optionShit.length)
 			curSelected = 0;
 		if (curSelected < 0)
-			curSelected = menuItems.length - 1;
+			curSelected = optionShit.length - 1;
 
 		menuItems.forEach(function(spr:FlxSprite)
 		{
-			spr.animation.play('idle');
-			spr.updateHitbox();
+			spr.alpha = 0.3;
 
 			if (spr.ID == curSelected)
 			{
-				spr.animation.play('selected');
-				var add:Float = 0;
-				if (menuItems.length > 4)
-				{
-					add = menuItems.length * 8;
-				}
-				camFollow.setPosition(spr.getGraphicMidpoint().x, spr.getGraphicMidpoint().y - add);
-				spr.centerOffsets();
+				spr.alpha = 1;
 			}
 		});
 	}

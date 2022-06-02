@@ -3,38 +3,38 @@
 	"difficulties": "Abyssal",
 	"hideFreeplay": false,
 	"weekBackground": "sf",
-	"weekBefore": "tutorial",
 	"freeplayColor": [
 		146,
 		113,
 		253
 	],
+	"weekBefore": "tutorial",
 	"startUnlocked": true,
-	"hideStoryMode": true,
-	"songs": [
-		[
-			"Upside Down (Old)",
-			"demo",
-			[
-				213,
-				23,
-				0
-			]
-		],
-		[
-			"Flayed (Old)",
-			"demo",
-			[
-				213,
-				23,
-				0
-			]
-		]
-	],
 	"weekCharacters": [
 		"",
 		"",
 		""
 	],
+	"songs": [
+		[
+			"Disturbance (Old)",
+			"demo",
+			[
+				157,
+				16,
+				0
+			]
+		],
+		[
+			"Upside Down (Old)",
+			"demo",
+			[
+				157,
+				16,
+				0
+			]
+		]
+	],
+	"hideStoryMode": true,
 	"weekName": "Legacy Songs"
 }

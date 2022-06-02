@@ -1,0 +1,41 @@
+{
+	"storyName": "Retrograde",
+	"difficulties": "Abyssal",
+	"hideFreeplay": false,
+	"weekBackground": "sf",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "tutorial",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"songs": [
+		[
+			"Retrograde",
+			"demo-pixel",
+			[
+				172,
+				20,
+				24
+			]
+		],
+		[
+			"Spine Chill",
+			"flayer",
+			[
+				34,
+				34,
+				57
+			]
+		]
+	],
+	"hideStoryMode": true,
+	"weekName": "Retrograde",
+	"hiddenUntilUnlocked": false
+}

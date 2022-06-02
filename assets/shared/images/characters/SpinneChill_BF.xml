@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="SpinneChill BF.png">
+	<!-- Created with Adobe Animate version 20.5.0.29329 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="SpinneChill BF Down0000" x="0" y="0" width="644" height="621"/>
+	<SubTexture name="SpinneChill BF Down0001" x="0" y="0" width="644" height="621"/>
+	<SubTexture name="SpinneChill BF Down0002" x="644" y="0" width="631" height="614" frameX="-7" frameY="-7" frameWidth="644" frameHeight="621"/>
+	<SubTexture name="SpinneChill BF Down0003" x="644" y="0" width="631" height="614" frameX="-7" frameY="-7" frameWidth="644" frameHeight="621"/>
+	<SubTexture name="SpinneChill BF Down0004" x="644" y="0" width="631" height="614" frameX="-7" frameY="-7" frameWidth="644" frameHeight="621"/>
+	<SubTexture name="SpinneChill BF Down0005" x="1275" y="0" width="625" height="613" frameX="-9" frameY="-8" frameWidth="644" frameHeight="621"/>
+	<SubTexture name="SpinneChill BF Down0006" x="1275" y="0" width="625" height="613" frameX="-9" frameY="-8" frameWidth="644" frameHeight="621"/>
+	<SubTexture name="SpinneChill BF Down Miss0000" x="1900" y="0" width="644" height="620"/>
+	<SubTexture name="SpinneChill BF Down Miss0001" x="1900" y="0" width="644" height="620"/>
+	<SubTexture name="SpinneChill BF Down Miss0002" x="2544" y="0" width="603" height="601" frameX="-22" frameY="-19" frameWidth="644" frameHeight="620"/>
+	<SubTexture name="SpinneChill BF Down Miss0003" x="2544" y="0" width="603" height="601" frameX="-22" frameY="-19" frameWidth="644" frameHeight="620"/>
+	<SubTexture name="SpinneChill BF Down Miss0004" x="3147" y="0" width="589" height="605" frameX="-33" frameY="-15" frameWidth="644" frameHeight="620"/>
+	<SubTexture name="SpinneChill BF Down Miss0005" x="3147" y="0" width="589" height="605" frameX="-33" frameY="-15" frameWidth="644" frameHeight="620"/>
+	<SubTexture name="SpinneChill BF Down Miss0006" x="3147" y="0" width="589" height="605" frameX="-33" frameY="-15" frameWidth="644" frameHeight="620"/>
+	<SubTexture name="SpinneChill BF Idle 0000" x="3736" y="0" width="586" height="636" frameX="0" frameY="-1" frameWidth="586" frameHeight="637"/>
+	<SubTexture name="SpinneChill BF Idle 0001" x="3736" y="0" width="586" height="636" frameX="0" frameY="-1" frameWidth="586" frameHeight="637"/>
+	<SubTexture name="SpinneChill BF Idle 0002" x="4322" y="0" width="583" height="637" frameX="-2" frameY="0" frameWidth="586" frameHeight="637"/>
+	<SubTexture name="SpinneChill BF Idle 0003" x="4905" y="0" width="583" height="637" frameX="-2" frameY="0" frameWidth="586" frameHeight="637"/>
+	<SubTexture name="SpinneChill BF Idle 0004" x="4905" y="0" width="583" height="637" frameX="-2" frameY="0" frameWidth="586" frameHeight="637"/>
+	<SubTexture name="SpinneChill BF Idle 0005" x="5488" y="0" width="571" height="631" frameX="-8" frameY="-5" frameWidth="586" frameHeight="637"/>
+	<SubTexture name="SpinneChill BF Idle 0006" x="5488" y="0" width="571" height="631" frameX="-8" frameY="-5" frameWidth="586" frameHeight="637"/>
+	<SubTexture name="SpinneChill BF Idle 0007" x="6059" y="0" width="571" height="631" frameX="-8" frameY="-5" frameWidth="586" frameHeight="637"/>
+	<SubTexture name="SpinneChill BF Idle 0008" x="6630" y="0" width="565" height="626" frameX="-11" frameY="-10" frameWidth="586" frameHeight="637"/>
+	<SubTexture name="SpinneChill BF Idle 0009" x="6630" y="0" width="565" height="626" frameX="-11" frameY="-10" frameWidth="586" frameHeight="637"/>
+	<SubTexture name="SpinneChill BF Idle 0010" x="6630" y="0" width="565" height="626" frameX="-11" frameY="-10" frameWidth="586" frameHeight="637"/>
+	<SubTexture name="SpinneChill BF Idle 0011" x="7195" y="0" width="565" height="626" frameX="-11" frameY="-10" frameWidth="586" frameHeight="637"/>
+	<SubTexture name="SpinneChill BF Idle 0012" x="7195" y="0" width="565" height="626" frameX="-11" frameY="-10" frameWidth="586" frameHeight="637"/>
+	<SubTexture name="SpinneChill BF Left0000" x="0" y="637" width="631" height="668"/>
+	<SubTexture name="SpinneChill BF Left0001" x="0" y="637" width="631" height="668"/>
+	<SubTexture name="SpinneChill BF Left0002" x="631" y="637" width="625" height="662" frameX="-2" frameY="-6" frameWidth="631" frameHeight="668"/>
+	<SubTexture name="SpinneChill BF Left0003" x="631" y="637" width="625" height="662" frameX="-2" frameY="-6" frameWidth="631" frameHeight="668"/>
+	<SubTexture name="SpinneChill BF Left0004" x="631" y="637" width="625" height="662" frameX="-2" frameY="-6" frameWidth="631" frameHeight="668"/>
+	<SubTexture name="SpinneChill BF Left0005" x="1256" y="637" width="615" height="652" frameX="-2" frameY="-16" frameWidth="631" frameHeight="668"/>
+	<SubTexture name="SpinneChill BF Left0006" x="1256" y="637" width="615" height="652" frameX="-2" frameY="-16" frameWidth="631" frameHeight="668"/>
+	<SubTexture name="SpinneChill BF Left Miss0000" x="1871" y="637" width="632" height="668" frameX="-5" frameY="-11" frameWidth="650" frameHeight="679"/>
+	<SubTexture name="SpinneChill BF Left Miss0001" x="1871" y="637" width="632" height="668" frameX="-5" frameY="-11" frameWidth="650" frameHeight="679"/>
+	<SubTexture name="SpinneChill BF Left Miss0002" x="2503" y="637" width="650" height="679"/>
+	<SubTexture name="SpinneChill BF Left Miss0003" x="2503" y="637" width="650" height="679"/>
+	<SubTexture name="SpinneChill BF Left Miss0004" x="2503" y="637" width="650" height="679"/>
+	<SubTexture name="SpinneChill BF Left Miss0005" x="3153" y="637" width="637" height="667" frameX="0" frameY="-12" frameWidth="650" frameHeight="679"/>
+	<SubTexture name="SpinneChill BF Left Miss0006" x="3153" y="637" width="637" height="667" frameX="0" frameY="-12" frameWidth="650" frameHeight="679"/>
+	<SubTexture name="SpinneChill BF Right0000" x="3790" y="637" width="571" height="648" frameX="-27" frameY="-10" frameWidth="598" frameHeight="658"/>
+	<SubTexture name="SpinneChill BF Right0001" x="3790" y="637" width="571" height="648" frameX="-27" frameY="-10" frameWidth="598" frameHeight="658"/>
+	<SubTexture name="SpinneChill BF Right0002" x="4361" y="637" width="585" height="658" frameX="-4" frameY="0" frameWidth="598" frameHeight="658"/>
+	<SubTexture name="SpinneChill BF Right0003" x="4361" y="637" width="585" height="658" frameX="-4" frameY="0" frameWidth="598" frameHeight="658"/>
+	<SubTexture name="SpinneChill BF Right0004" x="4361" y="637" width="585" height="658" frameX="-4" frameY="0" frameWidth="598" frameHeight="658"/>
+	<SubTexture name="SpinneChill BF Right0005" x="4946" y="637" width="590" height="658" frameX="0" frameY="0" frameWidth="598" frameHeight="658"/>
+	<SubTexture name="SpinneChill BF Right0006" x="4946" y="637" width="590" height="658" frameX="0" frameY="0" frameWidth="598" frameHeight="658"/>
+	<SubTexture name="SpinneChill BF Right Miss0000" x="5536" y="637" width="570" height="649" frameX="-13" frameY="-20" frameWidth="583" frameHeight="669"/>
+	<SubTexture name="SpinneChill BF Right Miss0001" x="5536" y="637" width="570" height="649" frameX="-13" frameY="-20" frameWidth="583" frameHeight="669"/>
+	<SubTexture name="SpinneChill BF Right Miss0002" x="6106" y="637" width="583" height="656" frameX="0" frameY="-13" frameWidth="583" frameHeight="669"/>
+	<SubTexture name="SpinneChill BF Right Miss0003" x="6106" y="637" width="583" height="656" frameX="0" frameY="-13" frameWidth="583" frameHeight="669"/>
+	<SubTexture name="SpinneChill BF Right Miss0004" x="6106" y="637" width="583" height="656" frameX="0" frameY="-13" frameWidth="583" frameHeight="669"/>
+	<SubTexture name="SpinneChill BF Right Miss0005" x="6689" y="637" width="565" height="669" frameX="-2" frameY="0" frameWidth="583" frameHeight="669"/>
+	<SubTexture name="SpinneChill BF Right Miss0006" x="6689" y="637" width="565" height="669" frameX="-2" frameY="0" frameWidth="583" frameHeight="669"/>
+	<SubTexture name="SpinneChill BF Up0000" x="7254" y="637" width="656" height="742" frameX="-1" frameY="0" frameWidth="657" frameHeight="742"/>
+	<SubTexture name="SpinneChill BF Up0001" x="7254" y="637" width="656" height="742" frameX="-1" frameY="0" frameWidth="657" frameHeight="742"/>
+	<SubTexture name="SpinneChill BF Up0002" x="0" y="1379" width="650" height="734" frameX="0" frameY="-7" frameWidth="657" frameHeight="742"/>
+	<SubTexture name="SpinneChill BF Up0003" x="0" y="1379" width="650" height="734" frameX="0" frameY="-7" frameWidth="657" frameHeight="742"/>
+	<SubTexture name="SpinneChill BF Up0004" x="0" y="1379" width="650" height="734" frameX="0" frameY="-7" frameWidth="657" frameHeight="742"/>
+	<SubTexture name="SpinneChill BF Up0005" x="650" y="1379" width="640" height="722" frameX="0" frameY="-20" frameWidth="657" frameHeight="742"/>
+	<SubTexture name="SpinneChill BF Up0006" x="650" y="1379" width="640" height="722" frameX="0" frameY="-20" frameWidth="657" frameHeight="742"/>
+	<SubTexture name="SpinneChill BF Up Miss0000" x="1290" y="1379" width="656" height="741" frameX="-8" frameY="-8" frameWidth="671" frameHeight="749"/>
+	<SubTexture name="SpinneChill BF Up Miss0001" x="1290" y="1379" width="656" height="741" frameX="-8" frameY="-8" frameWidth="671" frameHeight="749"/>
+	<SubTexture name="SpinneChill BF Up Miss0002" x="1946" y="1379" width="671" height="749"/>
+	<SubTexture name="SpinneChill BF Up Miss0003" x="1946" y="1379" width="671" height="749"/>
+	<SubTexture name="SpinneChill BF Up Miss0004" x="2617" y="1379" width="662" height="736" frameX="0" frameY="-13" frameWidth="671" frameHeight="749"/>
+	<SubTexture name="SpinneChill BF Up Miss0005" x="2617" y="1379" width="662" height="736" frameX="0" frameY="-13" frameWidth="671" frameHeight="749"/>
+	<SubTexture name="SpinneChill BF Up Miss0006" x="2617" y="1379" width="662" height="736" frameX="0" frameY="-13" frameWidth="671" frameHeight="749"/>
+</TextureAtlas>

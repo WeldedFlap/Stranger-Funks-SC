@@ -1,0 +1,182 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				25
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "Atari bf Up Miss",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-13,
+				7
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "Atari bf Left Miss",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				11
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "Atari bf Down Miss",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				63,
+				8
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "Atari bf Right Miss",
+			"indices": []
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "Atari bf Idle"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				50,
+				2
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Atari bf Right",
+			"indices": [
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				11,
+				0
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Atari bf Left",
+			"indices": [
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				13,
+				0
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Atari bf Down",
+			"indices": [
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				25
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Atari bf Up",
+			"indices": [
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14
+			]
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/Atari_BF",
+	"position": [
+		-40,
+		160
+	],
+	"healthicon": "bf-atari-pixel",
+	"flip_x": true,
+	"healthbar_colors": [
+		0,
+		187,
+		192
+	],
+	"camera_position": [
+		60,
+		140
+	],
+	"sing_duration": 4,
+	"scale": 0.8
+}

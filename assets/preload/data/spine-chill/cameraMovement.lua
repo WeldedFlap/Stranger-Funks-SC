@@ -1,7 +1,7 @@
 local xx = 550
 local yy = -190
-local xx2 = 920
-local yy2 = 465
+local xx2 = 1400
+local yy2 = 1110
 local ofs = 50
 local followchars = true
 

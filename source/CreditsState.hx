@@ -94,7 +94,7 @@ class CreditsState extends MusicBeatState
 			[
 				'SleppyDan',
 				'DanHead',
-				'Charter',
+				'Charter And Musician',
 				'https://instagram.com/sleppy_dan?utm_medium=copy_link',
 				'D82ECE'
 			],

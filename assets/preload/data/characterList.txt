@@ -21,3 +21,5 @@ bf-pixel-opponent
 pico-player
 demo
 flayer
+demo-pixel
+bf-spinechill

@@ -239,6 +239,10 @@ class PlayState extends MusicBeatState
 	var overlay4:BGSprite;
 	var overlay5:BGSprite;
 
+	var trees:BGSprite;
+
+	var basementLight:BGSprite;
+
 	public var songScore:Int = 0;
 	public var songHits:Int = 0;
 	public var songMisses:Int = 0;
@@ -776,6 +780,30 @@ class PlayState extends MusicBeatState
 
 				var stage:BGSprite = new BGSprite('stages/starCourt/StarcourtStage', -1230, -1200, 0.97, 0.97);
 				add(stage);
+
+			case 'retrograde':
+				GameOverSubstate.deathSoundName = 'fnf_loss_sfx-pixel';
+				GameOverSubstate.loopSoundName = 'gameOver-pixel';
+				GameOverSubstate.endSoundName = 'gameOverEnd-pixel';
+				GameOverSubstate.characterName = 'bf-pixel-dead';
+
+				var bg:BGSprite = new BGSprite("stages/retrograde/bgTrees", -801, -301, 0.9, 0.9);
+				bg.antialiasing = false;
+				add(bg);
+
+				trees = new BGSprite('stages/retrograde/trees', -165, -134, 0.9, 0.9);
+				trees.antialiasing = false;
+				trees.setGraphicSize(Std.int(trees.width * 0.8));
+				trees.updateHitbox();
+
+			case 'basement':
+				var bg:BGSprite = new BGSprite('stages/basement/Basement', 0, 0, 0.9, 0.9);
+				bg.screenCenter();
+				add(bg);
+
+				basementLight = new BGSprite("stages/basement/lighting", 0, 0, 0.9, 0.9);
+				basementLight.screenCenter();
+				add(basementLight);
 		}
 
 		if (isPixelStage)
@@ -789,14 +817,22 @@ class PlayState extends MusicBeatState
 		if (curStage == 'limo')
 			add(limo);
 
-		if (curStage == 'field') // this code is sucks lmao
+		if (curStage == 'field')
+		{ // this code is sucks lmao
 			add(dadGroup);
-		add(overlay1);
-		add(overlay2);
-		add(overlay3);
-		add(overlay4);
-		add(overlay5);
-		add(boyfriendGroup);
+			add(overlay1);
+			add(overlay2);
+			add(overlay3);
+			add(overlay4);
+			add(overlay5);
+			add(boyfriendGroup);
+		}
+
+		if (curStage == 'retrograde') {
+			add(boyfriendGroup);
+			add(dadGroup);
+			add(trees);
+		}
 
 		add(dadGroup);
 		add(boyfriendGroup);
@@ -1274,9 +1310,6 @@ class PlayState extends MusicBeatState
 						FlxG.sound.play(Paths.sound('ANGRY'));
 					schoolIntro(doof);
 
-				case 'upside-down' | 'spine-chill' | 'flayed':
-					startDialogue(dialogueJson);
-
 				default:
 					startCountdown();
 			}
@@ -1485,7 +1518,6 @@ class PlayState extends MusicBeatState
 			foundFile = true;
 		}
 		} if (foundFile)
-
 		{
 			inCutscene = true;
 			var bg = new FlxSprite(-FlxG.width, -FlxG.height).makeGraphic(FlxG.width * 3, FlxG.height * 3, FlxColor.BLACK);

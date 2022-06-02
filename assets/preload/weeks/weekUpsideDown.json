@@ -3,47 +3,47 @@
 	"difficulties": "Abyssal",
 	"hideFreeplay": false,
 	"weekBackground": "sf",
-	"weekBefore": "tutorial",
 	"freeplayColor": [
 		146,
 		113,
 		253
 	],
+	"weekBefore": "tutorial",
 	"startUnlocked": true,
-	"hideStoryMode": false,
-	"songs": [
-		[
-			"Upside Down",
-			"demo",
-			[
-				213,
-				23,
-				0
-			]
-		],
-		[
-			"Spine Chill",
-			"flayer",
-			[
-				34,
-				34,
-				57
-			]
-		],
-		[
-			"Flayed",
-			"demo",
-			[
-				213,
-				23,
-				0
-			]
-		]
-	],
 	"weekCharacters": [
 		"",
 		"",
 		""
 	],
+	"songs": [
+		[
+			"Disturbance",
+			"demo",
+			[
+				157,
+				16,
+				0
+			]
+		],
+		[
+			"Upside Down",
+			"demo",
+			[
+				157,
+				16,
+				0
+			]
+		],
+		[
+			"Without A Trace",
+			"demo",
+			[
+				157,
+				16,
+				0
+			]
+		]
+	],
+	"hideStoryMode": false,
 	"weekName": "Week Upside Down"
 }

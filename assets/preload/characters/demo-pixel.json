@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				131,
+				78
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Pixelgorgon Left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				147,
+				-51
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Pixelgorgon Down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				253,
+				138
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Pixelgorgon Up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				94,
+				59
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Pixelgorgon Right",
+			"indices": []
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "Pixelgorgon Idle"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/Pixel_Gorgon",
+	"position": [
+		-70,
+		-160
+	],
+	"healthicon": "demo-pixel",
+	"flip_x": false,
+	"healthbar_colors": [
+		172,
+		20,
+		24
+	],
+	"camera_position": [
+		-50,
+		-160
+	],
+	"sing_duration": 6.1,
+	"scale": 0.8
+}
